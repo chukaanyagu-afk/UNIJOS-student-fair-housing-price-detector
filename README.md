@@ -9,14 +9,14 @@ Students around Village, Farin Gada pay N150k to N450k for almost identical self
 
 ### What I Did
 
-* Collected 100 houses from Jiji.ng (Oct 2026) - location, type, water, light, furnished, distance to UNIJOS
+* Collected 100 houses from Jiji.ng and facebook (Oct 2026) - location, type, water, light, furnished, distance to UNIJOS
 * Stored water/light/furnished as Yes/No for readability (converted to 1/0 for model)
 * Trained Linear Regression to predict fair price
 * Flagged OVERPRICED if actual is >20% above fair
 
-### Key Results (Your 71% story)
+### Key Results
 
-* R2 = 0.71, MAE = ~N32k -> Model explains 71% of price variation
+* R2 = 0.71, MAE = ~N37k -> Model explains 71% of price variation
 * 31 out of 100 houses flagged OVERPRICED
 * Average overcharge in Village: N68k/year
 * Biggest price driver: location (Village = +N90k vs Angwan Rogo), then has_water
@@ -35,9 +35,9 @@ If you're paying >20% above fair price, you're likely paying agent greed + locat
 * `results/final_results.csv` - With fair_price, overpriced_pct, status
 * `notebooks/model.ipynb` - Full training
 
-### Limitations (This makes you stand out - juniors don't write this)
+### Limitations 
 
-* Data is asking price from Jiji, not final paid price
+* Data is asking price from Jiji and facebook , not final paid price
 * Yes/No hides quality (borehole 2hrs vs 24hrs both = Yes)
 * Could improve with more data on security, road condition
 
