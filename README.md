@@ -41,6 +41,4 @@ If you're paying >20% above fair price, you're likely paying agent greed + locat
 * Yes/No hides quality (borehole 2hrs vs 24hrs both = Yes)
 * Could improve with more data on security, road condition
 
-### Next
 
-Build Streamlit app: enter house details -> tells you if overpriced.
